@@ -1,0 +1,15 @@
+# Byte-compiled/ optimized / DLL files
+*__pycache__
+
+# Unit test / coverage reports
+.coverage
+.cache
+
+# OS and editor files
+.DS_Store
+
+# Virtualvenv
+/my_env
+
+# Secret Settings
+secret_settings.py
