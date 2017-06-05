@@ -1,10 +1,13 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.core.urlresolvers import reverse
 
 class PublishedManager(models.Manager):
     def get_queryset(self):
-        return super(PublishedManager, self).get_queryset().filter(status='published')
+        return super(PublishedManager,
+                     self).get_queryset()\
+                     .filter(status='published')
 
 class Post(models.Model):
     STATUS_CHOICES = (
@@ -21,7 +24,7 @@ class Post(models.Model):
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
 
     objects = models.Manager() # Default Manager
-    published = PublishedManager() # Dahl-specific manager
+    published = PublishedManager() # My custom manager
 
     class Meta:
         ordering = ('-publish',)
@@ -30,7 +33,8 @@ class Post(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('blog:post_detail', args=[self.publish.year,
-                                                 self.publish.strftime('%m'),
-                                                 self.publish.strftime('%d'),
-                                                 self.slug])
+        return reverse('blog:post_detail',
+                       args=[self.publish.year,
+                             self.publish.strftime('%m'),
+                             self.publish.strftime('%d'),
+                             self.slug])
