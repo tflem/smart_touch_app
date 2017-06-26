@@ -1,21 +1,134 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* -------------------------------------------- */
+/* Basic Styling */
+/* -------------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html {
     background-color: #FFF;
-    color: #555;
+    color: #201d1d;
     font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
 
+/* -------------------------------------------- */
+/* Reusable Components */
+/* -------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 h1 {
     font-family: 'Playfair Display', serif;
+    color: #6DFFFF;
+    font-size: 275%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 150%;
+    font-weight: 300;
+    color: #6DFFFF;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    margin-bottom: 10px;
+
+}
+
+h3 {
+    color: #000;
+}
+
+/* -------------------------------------------- */
+/* Header */
+/* -------------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+                                      rgba(0, 0, 0, 0.6)), url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    margin-top: 15%;
+    text-align: center;
+    width: auto;
+}
+
+.main-navigation {
+    text-align: center;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-navigation li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-navigation li a:link,
+.main-navigation li a:visited {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+
+.main-navigation li a:hover,
+.main-navigation li a:active {
+    color: #6DFFFF;
+    transition: 0.2s;
+}
+
+.ion-arrow-right-a {
+    margin: 10px 10px;
+}
+
+/* -------------------------------------------- */
+/* Buttons */
+/* -------------------------------------------- */
+
+.button:link,
+.button:visited {
+    background-color: #6DFFFF;
+    color: #000;
+    border: 1px solid #6DFFFF;
+    display: inline-block;
+    padding: 15px 35px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.button:hover,
+.button:active {
+    background-color: #00f5f5;
+}
+
+.divider {
+    height: 10px;
+    width: 100%;
+    background-color: #6DFFFF;
 }
