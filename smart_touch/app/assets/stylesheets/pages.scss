@@ -13,7 +13,7 @@
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
@@ -26,13 +26,19 @@ html {
 }
 
 /* -------------------------------------------- */
-/* Reusable Components */
+/* Reusable Elements */
 /* -------------------------------------------- */
 
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+section {
+    padding: 80px 0;
+}
+
+/* ------ Headings ------ */
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -59,6 +65,17 @@ h3 {
     color: #000;
 }
 
+/* ------ Paragraphs ------ */
+
+.company-introduction {   
+    line-height: 145%; 
+    width: 70%;
+    margin-left: 15%;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+
+}
+
 /* -------------------------------------------- */
 /* Header */
 /* -------------------------------------------- */
@@ -77,10 +94,25 @@ header {
     width: auto;
 }
 
+.company-name  {
+    float: left;    
+    color: #FFF;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 175%;
+}
+
+.company-name:hover,
+.ion-chevron-left {
+    color: #6DFFFF;
+    transition: 0.2s;
+}
+
 .main-navigation {
     text-align: center;
     list-style: none;
-    margin-top: 30px;
+    margin-top: 40px;
+    float: right;
 }
 
 .main-navigation li {
@@ -102,8 +134,14 @@ header {
     transition: 0.2s;
 }
 
-.ion-arrow-right-a {
-    margin: 10px 10px;
+.ion-chevron-left {
+    color: #FFF;    
+    margin: 5px 5px;
+}
+
+.ion-chevron-left:hover {
+    color: #6DFFFF;
+    transition: 0.2s;
 }
 
 /* -------------------------------------------- */
@@ -113,6 +151,7 @@ header {
 .button:link,
 .button:visited {
     background-color: #6DFFFF;
+    border-radius: 4px;
     color: #000;
     border: 1px solid #6DFFFF;
     display: inline-block;
