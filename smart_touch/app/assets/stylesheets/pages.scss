@@ -62,18 +62,41 @@ h2 {
 }
 
 h3 {
+    font-family: 'Raleway', sans-serif;
     color: #000;
+    text-align: center;
+    margin-bottom: 30px;
 }
+
+h3:after {
+    display: block;
+    top: -10px;
+    height: 2px;
+    background-color: #6DFFFF;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 0 2px 6px #000;
+}
+
 
 /* ------ Paragraphs ------ */
 
-.company-introduction {   
+.company-introduction,
+.about {   
     line-height: 145%; 
     width: 70%;
     margin-left: 15%;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
+}
 
+.blog-entries {
+    background-color: #F4F4F4;
+    line-height: 145%; 
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* -------------------------------------------- */
@@ -110,6 +133,7 @@ header {
 
 .main-navigation {
     text-align: center;
+    letter-spacing: 2px;
     list-style: none;
     margin-top: 40px;
     float: right;
@@ -163,11 +187,30 @@ header {
 
 .button:hover,
 .button:active {
-    background-color: #00f5f5;
+    background-color: #00F5F5;
 }
 
 .divider {
     height: 10px;
     width: 100%;
     background-color: #6DFFFF;
+}
+
+/* -------------------------------------------- */
+/* Contact */
+/* -------------------------------------------- */
+
+.contact {
+    background-color: #F4F4F4;
+}
+
+/* -------------------------------------------- */
+/* Footer */
+/* -------------------------------------------- */
+
+footer {
+    background-color: #00F5F5;
+    padding: 50px;
+    font-size: 100%;
+    color: #000;
 }
