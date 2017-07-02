@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :production do
-  gem 'pg', '~> 0.20'
+  gem 'pg', '~> 0.20.0'
 end
 
 group :development, :test do
@@ -44,7 +44,7 @@ end
 
 group :development do
   # Use postgresql as the database for Active Record
-  gem 'pg', '~> 0.20'
+  gem 'pg', '~> 0.20.0'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
