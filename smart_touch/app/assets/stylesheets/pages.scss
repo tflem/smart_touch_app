@@ -38,9 +38,7 @@ section {
     padding: 80px 0;
 }
 
-.footer-box {
-    text-align: center;
-}
+.footer-box, .copyright-box { text-align: center; }
 
 /* ------ Headings ------ */
 
@@ -62,7 +60,6 @@ h2 {
     letter-spacing: 1px;
     word-spacing: 4px;
     margin-bottom: 10px;
-
 }
 
 h3 {
@@ -265,11 +262,85 @@ textarea {
 footer {
     background-color: #000;
     padding: 50px;
-    font-size: 65%;
+    font-size: 75%;
     color: #00F5F5;
 }
 
 footer a {
     text-decoration-color: #00F5F5;
-    color: #00F5F5
+    color: #00F5F5;
+}
+
+.address,
+.hours {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #333;
+}
+
+/* -------------------------------------------- */
+/* Copyright */
+/* -------------------------------------------- */
+
+.copyright {
+    padding: 10px 0;
+    box-sizing: border-box;
+    height: auto;
+    color: #00F5F5;
+    overflow: hidden;
+    font-size: 75%;
+    border-top: 0 solid transparent;
+    border-top-width: 1px;
+    background-color: #16171D;
+}
+
+.ion-android-favorite {
+    color: #E74C3C;
+}
+
+.social-icons {
+    list-style: none;
+    float: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons li a:link,
+.social-icons li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #00F5F5;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.social-icons li a:link,
+.social-icons li a:visited {
+    font-size: 100%;
+}
+
+.ion-social-twitter,
+.ion-social-linkedin,
+.ion-social-github {
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.ion-social-twitter:hover {
+    color: #00ACED;
+}
+
+.ion-social-linkedin:hover {
+    color: #0077B5;
+}
+
+.ion-social-github:hover {
+    color: #4078C0;
 }

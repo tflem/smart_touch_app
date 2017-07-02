@@ -5,4 +5,5 @@
 * Ruby on Rails 5
 * HTML
 * CSS
+* jQuery
 * PostgreSQL
