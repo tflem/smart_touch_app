@@ -38,6 +38,10 @@ section {
     padding: 80px 0;
 }
 
+.footer-box {
+    text-align: center;
+}
+
 /* ------ Headings ------ */
 
 h1 {
@@ -80,12 +84,17 @@ h3:after {
     box-shadow: 0 2px 6px #000;
 }
 
+h4 {
+    text-align: center;
+    margin: 2px 0 auto;
+}
+
 
 /* ------ Paragraphs ------ */
 
 .company-introduction,
-.about {   
-    line-height: 145%; 
+.about {
+    line-height: 145%;
     width: 70%;
     margin-left: 15%;
     font-weight: 300;
@@ -94,7 +103,7 @@ h3:after {
 
 .blog-entries {
     background-color: #F4F4F4;
-    line-height: 145%; 
+    line-height: 145%;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
 }
@@ -118,7 +127,7 @@ header {
 }
 
 .company-name  {
-    float: left;    
+    float: left;
     color: #FFF;
     text-decoration: none;
     margin-top: 30px;
@@ -159,7 +168,7 @@ header {
 }
 
 .ion-chevron-left {
-    color: #FFF;    
+    color: #FFF;
     margin: 5px 5px;
 }
 
@@ -197,20 +206,70 @@ header {
 }
 
 /* -------------------------------------------- */
-/* Contact */
+/* Contact Form */
 /* -------------------------------------------- */
 
 .contact {
     background-color: #F4F4F4;
 }
 
+form { max-width: 480px; margin: 50px auto; }
+
+.message-input {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #000;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.message-input:focus { border: 2px solid #00F5F5; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+  background: #6DFFFF;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: #000;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover { background: #00F5F5; }
+
+
 /* -------------------------------------------- */
 /* Footer */
 /* -------------------------------------------- */
 
 footer {
-    background-color: #00F5F5;
+    background-color: #000;
     padding: 50px;
-    font-size: 100%;
-    color: #000;
+    font-size: 65%;
+    color: #00F5F5;
+}
+
+footer a {
+    text-decoration-color: #00F5F5;
+    color: #00F5F5
 }
