@@ -81,7 +81,7 @@ h3:after {
     box-shadow: 0 2px 6px #000;
 }
 
-h4 {
+h5 {
     text-align: center;
     margin: 2px 0 auto;
 }
@@ -94,13 +94,6 @@ h4 {
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
-    font-weight: 300;
-    font-family: 'Raleway', sans-serif;
-}
-
-.blog-entries {
-    background-color: #F4F4F4;
-    line-height: 145%;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
 }
@@ -203,6 +196,25 @@ header {
 }
 
 /* -------------------------------------------- */
+/* Blog Entries */
+/* -------------------------------------------- */
+
+img { max-width: 100%; }
+
+.blog-entries,
+.blog-post a {
+    background-color: #F4F4F4;
+    line-height: 145%;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+.blog-post a:hover { color: #00F5F5; }
+
+/* -------------------------------------------- */
 /* Contact Form */
 /* -------------------------------------------- */
 
@@ -294,9 +306,7 @@ footer a {
     background-color: #16171D;
 }
 
-.ion-android-favorite {
-    color: #E74C3C;
-}
+.ion-android-favorite { color: #E74C3C; }
 
 .social-icons {
     list-style: none;
@@ -308,9 +318,7 @@ footer a {
     margin-right: 20px;
 }
 
-.social-icons li:last-child {
-    margin-right: 0;
-}
+.social-icons li:last-child { margin-right: 0; }
 
 .social-icons li a:link,
 .social-icons li a:visited {
@@ -333,14 +341,8 @@ footer a {
     transition: color 0.3s;
 }
 
-.ion-social-twitter:hover {
-    color: #00ACED;
-}
+.ion-social-twitter:hover { color: #00ACED; }
 
-.ion-social-linkedin:hover {
-    color: #0077B5;
-}
+.ion-social-linkedin:hover { color: #0077B5; }
 
-.ion-social-github:hover {
-    color: #4078C0;
-}
+.ion-social-github:hover { color: #4078C0; }
