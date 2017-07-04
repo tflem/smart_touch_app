@@ -203,7 +203,7 @@ img { max-width: 100%; }
 
 .blog-entries,
 .blog-post a {
-    background-color: #C4BCBC;
+    background-color: #F4F4F4;
     line-height: 145%;
     font-weight: 700;
     text-align: center;
@@ -212,14 +212,14 @@ img { max-width: 100%; }
     font-family: 'Raleway', sans-serif;
 }
 
-.blog-post a:hover { color: #00F5F5; }
+.blog-post a:hover { color: #14B0B0; }
 
 /* -------------------------------------------- */
 /* Contact Form */
 /* -------------------------------------------- */
 
 .contact {
-    background-color: #C4BCBC;
+    background-color: #F4F4F4;
 }
 
 form { max-width: 480px; margin: 50px auto; }
@@ -241,7 +241,7 @@ form { max-width: 480px; margin: 50px auto; }
   outline: 0;
 }
 
-.message-input:focus { border: 2px solid #00F5F5; }
+.message-input:focus { border: 2px solid #14B0B0; }
 
 textarea {
   height: 150px;
@@ -252,11 +252,11 @@ textarea {
 [type="submit"] {
   font-family: 'Raleway', sans-serif;
   width: 100%;
-  background: #6DFFFF;
+  background: #14B0B0;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
-  color: #000;
+  color: #FFF;
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -264,7 +264,7 @@ textarea {
   margin-top: -4px;
   font-weight: 700;
 }
-[type="submit"]:hover { background: #00F5F5; }
+[type="submit"]:hover { background: #12a1a1; }
 
 
 /* -------------------------------------------- */
