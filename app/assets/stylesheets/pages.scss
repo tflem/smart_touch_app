@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
     box-sizing: border-box;
 }
 
@@ -16,13 +17,15 @@
     box-sizing: inherit;
 }
 
-html {
+html,
+body {
     background-color: #FFF;
-    color: #201d1d;
+    color: #201D1D;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1em;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 /* -------------------------------------------- */
@@ -45,7 +48,7 @@ section {
 h1 {
     font-family: 'Playfair Display', serif;
     color: #6DFFFF;
-    font-size: 275%;
+    font-size: 1.3em;
     font-weight: 300;
     letter-spacing: 1px;
     margin: 0;
@@ -54,7 +57,7 @@ h1 {
 
 h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 150%;
+    font-size: 1.1em;
     font-weight: 300;
     color: #6DFFFF;
     letter-spacing: 1px;
@@ -112,8 +115,10 @@ header {
 
 .hero-text-box {
     margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     text-align: center;
-    width: auto;
 }
 
 .company-name  {
@@ -121,7 +126,7 @@ header {
     color: #FFF;
     text-decoration: none;
     margin-top: 30px;
-    font-size: 175%;
+    font-size: 1.5em;
 }
 
 .company-name:hover,
@@ -284,11 +289,17 @@ footer a {
 }
 
 .address,
-.hours {
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: #333;
+.hours { margin-bottom: 10px; }
+
+@media screen and (min-width: 900px) {
+    .address,
+    .hours {
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: #333;
+  }
 }
+
 
 /* -------------------------------------------- */
 /* Copyright */
