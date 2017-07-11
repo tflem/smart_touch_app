@@ -47,7 +47,7 @@ section {
 
 h1 {
     font-family: 'Playfair Display', serif;
-    color: #6DFFFF;
+    color: #00F5F5;
     font-size: 1.3em;
     font-weight: 300;
     letter-spacing: 1px;
@@ -57,9 +57,9 @@ h1 {
 
 h2 {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    color: #6DFFFF;
+    font-size: .5em;
+    font-weight: 100;
+    color: #00F5F5;
     letter-spacing: 1px;
     word-spacing: 4px;
     margin-bottom: 10px;
@@ -76,7 +76,7 @@ h3:after {
     display: block;
     top: -10px;
     height: 2px;
-    background-color: #6DFFFF;
+    background-color: teal;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -105,8 +105,8 @@ h5 {
 /* Header */
 /* -------------------------------------------- */
 
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+.section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
                                       rgba(0, 0, 0, 0.6)), url('bg.jpg');
     background-size: cover;
     background-position: center;
@@ -129,55 +129,12 @@ header {
     font-size: 1.5em;
 }
 
-.company-name:hover,
-.ion-chevron-left {
-    color: #6DFFFF;
-    transition: 0.2s;
-}
-
-.main-navigation {
-    text-align: center;
-    letter-spacing: 2px;
-    list-style: none;
-    margin-top: 40px;
-    float: right;
-}
-
-.main-navigation li {
-    display: inline-block;
-    margin-left: 40px;
-}
-
-.main-navigation li a:link,
-.main-navigation li a:visited {
-    color: #FFF;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-}
-
-.main-navigation li a:hover,
-.main-navigation li a:active {
-    color: #6DFFFF;
-    transition: 0.2s;
-}
-
-.ion-chevron-left {
-    color: #FFF;
-    margin: 5px 5px;
-}
-
-.ion-chevron-left:hover {
-    color: #6DFFFF;
-    transition: 0.2s;
-}
-
 /* -------------------------------------------- */
 /* Buttons */
 /* -------------------------------------------- */
 
-.button:link,
-.button:visited {
+.btn-large,
+.btn-large:visited {
     background-color: #6DFFFF;
     border-radius: 4px;
     color: #000;
@@ -189,22 +146,14 @@ header {
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.button:hover,
-.button:active {
-    background-color: #00F5F5;
-}
-
-.divider {
-    height: 10px;
-    width: 100%;
-    background-color: #6DFFFF;
+.btn-large:hover,
+.btn-large:active {
+    background-color: #00796b teal darken-2;
 }
 
 /* -------------------------------------------- */
 /* Blog Entries */
 /* -------------------------------------------- */
-
-img { max-width: 100%; }
 
 .blog-entries,
 .blog-post a {
@@ -227,49 +176,29 @@ img { max-width: 100%; }
     background-color: #F4F4F4;
 }
 
-form { max-width: 480px; margin: 50px auto; }
-
-.message-input {
-  color: #000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid #000;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  outline: 0;
-}
-
-.message-input:focus { border: 2px solid #14B0B0; }
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
-}
+/* form {
+  max-width: 960px;
+  display: block;
+  text-align: center;
+  margin: 50px auto;
+} */
 
 [type="submit"] {
-  font-family: 'Raleway', sans-serif;
-  width: 100%;
-  background: #14B0B0;
-  border-radius: 5px;
-  border: 0;
-  cursor: pointer;
-  color: #FFF;
-  font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
-  font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    background: teal;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
 }
-[type="submit"]:hover { background: #12a1a1; }
+[type="submit"]:hover { background: teal; }
 
 
 /* -------------------------------------------- */
@@ -280,12 +209,12 @@ footer {
     background-color: #000;
     padding: 50px;
     font-size: 75%;
-    color: #00F5F5;
+    color: #4db6ac;
 }
 
 footer a {
-    text-decoration-color: #00F5F5;
-    color: #00F5F5;
+    text-decoration-color: #4db6ac;
+    color: #4db6ac;
 }
 
 .address,
@@ -309,7 +238,7 @@ footer a {
     padding: 10px 0;
     box-sizing: border-box;
     height: auto;
-    color: #00F5F5;
+    color: #4db6ac;
     overflow: hidden;
     font-size: 75%;
     border-top: 0 solid transparent;
@@ -317,7 +246,7 @@ footer a {
     background-color: #16171D;
 }
 
-.ion-android-favorite { color: #E74C3C; }
+.ion-heart { color: #E74C3C; }
 
 .social-icons {
     list-style: none;
@@ -335,7 +264,7 @@ footer a {
 .social-icons li a:visited {
     text-decoration: none;
     border: 0;
-    color: #00F5F5;
+    color: #4db6ac;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
