@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+.valign-wrapper {
+    height: 100%;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -24,6 +28,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 1em;
+    height: 100%;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
@@ -47,11 +52,7 @@ section {
 
 h1 {
     font-family: 'Playfair Display', serif;
-    color: #00F5F5;
-    font-size: 1.3em;
-    font-weight: 300;
     letter-spacing: 1px;
-    margin: 0;
     word-spacing: 4px;
 }
 
