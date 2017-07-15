@@ -25,12 +25,10 @@ html,
 body {
     background-color: #FFF;
     color: #201D1D;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
 }
 
 /* -------------------------------------------- */
@@ -52,28 +50,27 @@ section {
 
 h1 {
     font-family: 'Playfair Display', serif;
-    letter-spacing: 1px;
-    word-spacing: 4px;
-}
-
-h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: .5em;
     font-weight: 100;
-    color: #00F5F5;
     letter-spacing: 1px;
     word-spacing: 4px;
-    margin-bottom: 10px;
 }
 
-h3 {
+h4 {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+h5 {
     font-family: 'Raleway', sans-serif;
     color: #000;
+    font-weight: 300;
     text-align: center;
     margin-bottom: 30px;
 }
 
-h3:after {
+h5:after {
     display: block;
     top: -10px;
     height: 2px;
@@ -83,9 +80,10 @@ h3:after {
     margin: 0 auto;
     margin-top: 30px;
     box-shadow: 0 2px 6px #000;
+    margin-bottom: 35px;
 }
 
-h5 {
+h6 {
     text-align: center;
     margin: 2px 0 auto;
 }
@@ -93,41 +91,24 @@ h5 {
 
 /* ------ Paragraphs ------ */
 
-.company-introduction,
-.about {
+.company-introduction p,
+.about p {
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
-    font-weight: 300;
-    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
 }
 
 /* -------------------------------------------- */
 /* Header */
 /* -------------------------------------------- */
 
-.section {
+.hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),
                                       rgba(0, 0, 0, 0.6)), url('bg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
-}
-
-.hero-text-box {
-    margin-top: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    text-align: center;
-}
-
-.company-name  {
-    float: left;
-    color: #FFF;
-    text-decoration: none;
-    margin-top: 30px;
-    font-size: 1.5em;
 }
 
 /* -------------------------------------------- */
@@ -136,10 +117,10 @@ h5 {
 
 .btn-large,
 .btn-large:visited {
-    background-color: #6DFFFF;
+    background-color: teal;
     border-radius: 4px;
     color: #000;
-    border: 1px solid #6DFFFF;
+    border: 1px solid teal;
     display: inline-block;
     padding: 15px 35px;
     font-weight: 700;
@@ -149,7 +130,7 @@ h5 {
 
 .btn-large:hover,
 .btn-large:active {
-    background-color: #00796b teal darken-2;
+    background-color: teal;
 }
 
 /* -------------------------------------------- */
@@ -167,7 +148,7 @@ h5 {
     font-family: 'Raleway', sans-serif;
 }
 
-.blog-post a:hover { color: #14B0B0; }
+.blog-post a:hover { color: teal; }
 
 /* -------------------------------------------- */
 /* Contact Form */
@@ -177,12 +158,7 @@ h5 {
     background-color: #F4F4F4;
 }
 
-/* form {
-  max-width: 960px;
-  display: block;
-  text-align: center;
-  margin: 50px auto;
-} */
+form { margin: auto; }
 
 [type="submit"] {
     font-family: 'Raleway', sans-serif;
@@ -210,12 +186,12 @@ footer {
     background-color: #000;
     padding: 50px;
     font-size: 75%;
-    color: #4db6ac;
+    color: cyan;
 }
 
 footer a {
-    text-decoration-color: #4db6ac;
-    color: #4db6ac;
+    text-decoration-color: cyan;
+    color: cyan;
 }
 
 .address,
@@ -239,7 +215,7 @@ footer a {
     padding: 10px 0;
     box-sizing: border-box;
     height: auto;
-    color: #4db6ac;
+    color: cyan;
     overflow: hidden;
     font-size: 75%;
     border-top: 0 solid transparent;
@@ -252,6 +228,7 @@ footer a {
 .social-icons {
     list-style: none;
     float: none;
+    color: teal;
 }
 
 .social-icons li {
@@ -265,7 +242,7 @@ footer a {
 .social-icons li a:visited {
     text-decoration: none;
     border: 0;
-    color: #4db6ac;
+    color: teal;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
