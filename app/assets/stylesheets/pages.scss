@@ -73,7 +73,7 @@ h5:after {
     display: block;
     top: -10px;
     height: 2px;
-    background-color: teal;
+    background-color: cyan;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -230,7 +230,7 @@ footer a {
 .social-icons {
     list-style: none;
     float: none;
-    color: teal;
+    color: cyan;
 }
 
 .social-icons li {
@@ -244,7 +244,7 @@ footer a {
 .social-icons li a:visited {
     text-decoration: none;
     border: 0;
-    color: teal;
+    color: cyan;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
 }
