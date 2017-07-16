@@ -24,7 +24,9 @@
 <body>
   <header class="navbar-fixed">
     <aside>
-      <ul class="side-nav" id="slide-out" style="transform: translateX(-100%);"></ul>
+      <ul class="side-nav" id="slide-out" style="transform: translateX(-100%);">
+        <li><a href=""></a></li>
+      </ul>
     </aside>
     <nav class="teal">
       <div class="nav-wrapper container">
@@ -34,10 +36,10 @@
         </a>
         <a href="#" class="brand-logo">STLA</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#!">Home</a></li>
-          <li><a href="#!">Our Blog</a></li>
-          <li><a href="#!">About Us</a></li>
-          <li><a href="#!">Contact Us</a></li>
+          <li><a href= "#company-introduction">Learn More</a></li>
+          <li><a href= "#blog-entries">Blog Posts</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -46,8 +48,8 @@
     <div class="hero no-pad-bot cover" id="index-banner">
       <div class="valign-wrapper">
         <div class="row center white-text">
-          <h1 class="center-align white-text">Smart Touch Laser Aesthetics</h1>
-          <h4 class="center-align white-text">Facial Hair • Bikini Lines • Underarm
+          <h1 class="center-align cyan-text text-lighten-2">Smart Touch Laser Aesthetics</h1>
+          <h4 class="center-align cyan-text text-lighten-2">Facial Hair • Bikini Lines • Underarm
           Hair • Leg Hair</h4>
           <a class="btn-large waves-effect waves-light white-text" href="#" id="login-button">Login to Comment</a>
           <a class="btn-large waves-effect waves-light white-text" href="#" id="sign-up-button">Or Simply Sign Up</a>
@@ -61,7 +63,7 @@
 
   <!-- Introduction -->
 
-  <section class="company-introduction">
+  <section id="company-introduction" class="intro">
     <div class="row">
       <h5>The Big Apple's Choice for Laser Hair Removal</h5>
       <p class="flow-text">Are you tired of all that hair? Call Smart Touch Laser Aesthetics
@@ -75,7 +77,7 @@
   </section>
 
   <!-- Blog Entries -->
-  <section class="blog-entries">
+  <section id="blog-entries" class="blogs">
     <h5>Latest Blog Posts</h5>
       <div class="container">
         <div class="row">
@@ -114,7 +116,7 @@
     </section>
 
   <!-- About -->
-  <section class="about">
+  <section id="about" class="about-us">
     <div class="row">
       <h5>About Smart Touch Laser Aesthetics</h5>
         <p class="flow-text">Smart Touch Laser Aesthetics is a brand new
@@ -130,7 +132,7 @@
   </section>
 
   <!-- Contact STLA -->
-  <section class="contact">
+  <section id="contact" class="contact-us">
     <div class="row">
       <h5>Contact Smart Touch Laser Aesthetics</h5>
     </div>
@@ -221,6 +223,10 @@
     }
   );
   $('.collapsible').collapsible();
+
+  $(document).ready(function(){
+      $('.scrollspy').scrollSpy();
+  });
 </script>
   </body>
 </html>

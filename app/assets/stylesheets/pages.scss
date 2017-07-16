@@ -93,8 +93,8 @@ h6 {
 
 /* ------ Paragraphs ------ */
 
-.company-introduction p,
-.about p {
+.intro p,
+.about-us p {
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
@@ -106,7 +106,7 @@ h6 {
 /* -------------------------------------------- */
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
                                       rgba(0, 0, 0, 0.5)), url('bg.jpg');
     background-size: cover;
     background-position: center;
@@ -139,7 +139,7 @@ h6 {
 /* Blog Entries */
 /* -------------------------------------------- */
 
-.blog-entries,
+.blogs,
 .blog-post a {
     background-color: #F4F4F4;
     line-height: 145%;
@@ -156,7 +156,7 @@ h6 {
 /* Contact Form */
 /* -------------------------------------------- */
 
-.contact {
+.contact-us {
     background-color: #F4F4F4;
 }
 
