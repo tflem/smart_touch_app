@@ -186,6 +186,7 @@ form { margin: 25px auto; }
 
 footer {
     background-color: #000;
+    text-align: center;
     padding: 50px;
     font-size: 75%;
     color: cyan;
@@ -199,7 +200,7 @@ footer a {
 .address,
 .hours { margin-bottom: 10px; }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1300px) {
     .address,
     .hours {
         border-right-width: 1px;
@@ -207,7 +208,6 @@ footer a {
         border-right-color: #333;
   }
 }
-
 
 /* -------------------------------------------- */
 /* Copyright */
