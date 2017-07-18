@@ -106,7 +106,7 @@ h6 {
 /* -------------------------------------------- */
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
                                       rgba(0, 0, 0, 0.5)), url('bg.jpg');
     background-size: cover;
     background-position: center;
@@ -199,15 +199,6 @@ footer a {
 
 .address,
 .hours { margin-bottom: 10px; }
-
-@media screen and (min-width: 1300px) {
-    .address,
-    .hours {
-        border-right-width: 1px;
-        border-right-style: solid;
-        border-right-color: #333;
-  }
-}
 
 /* -------------------------------------------- */
 /* Copyright */
