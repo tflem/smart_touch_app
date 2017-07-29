@@ -6,4 +6,4 @@
 * HTML
 * jQuery
 * PostgreSQL
-* Materilize CSS
+* Materialize CSS
